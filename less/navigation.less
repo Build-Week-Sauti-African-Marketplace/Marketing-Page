@@ -6,6 +6,15 @@ nav {
     background-color: @navigation-bg;
     height: 7rem;
 
+    @media @tablet {
+        height: 6rem;
+    }
+
+    @media @mobile {
+        flex-direction: column;
+        height: 8rem;
+    }
+
     p {
         color: white;
         font-size: 3rem;
@@ -25,6 +34,14 @@ nav {
         height: 100%;
         border-left: 1px solid @light-gray;
 
+        @media @tablet {
+            width: 50%;
+        }
+
+        @media @mobile {
+            width: 100%;
+            border: 1px solid @light-gray;
+        }
 
         a {
             display: flex;

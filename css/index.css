@@ -170,6 +170,17 @@ nav {
   background-color: #212121;
   height: 7rem;
 }
+@media (max-width: 800px) {
+  nav {
+    height: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    height: 8rem;
+  }
+}
 nav p {
   color: white;
   font-size: 3rem;
@@ -186,6 +197,17 @@ nav .linkCont {
   width: 20%;
   height: 100%;
   border-left: 1px solid #666666;
+}
+@media (max-width: 800px) {
+  nav .linkCont {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  nav .linkCont {
+    width: 100%;
+    border: 1px solid #666666;
+  }
 }
 nav .linkCont a {
   display: flex;
