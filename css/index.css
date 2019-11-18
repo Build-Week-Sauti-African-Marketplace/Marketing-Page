@@ -163,6 +163,34 @@ img {
   max-width: 100%;
   height: auto;
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #212121;
+  height: 8rem;
+}
+nav .linkCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+nav .linkCont a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+}
+nav .linkCont a:hover {
+  background-color: gray;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
