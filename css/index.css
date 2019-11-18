@@ -168,7 +168,16 @@ nav {
   justify-content: space-around;
   align-items: center;
   background-color: #212121;
-  height: 8rem;
+  height: 7rem;
+}
+nav p {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0;
+}
+nav p span {
+  color: #FE5043;
 }
 nav .linkCont {
   display: flex;
@@ -176,6 +185,7 @@ nav .linkCont {
   align-items: center;
   width: 20%;
   height: 100%;
+  border-left: 1px solid #666666;
 }
 nav .linkCont a {
   display: flex;
@@ -187,9 +197,11 @@ nav .linkCont a {
   height: 100%;
   width: 100%;
   padding: 2%;
+  border-right: 1px solid #666666;
 }
 nav .linkCont a:hover {
-  background-color: gray;
+  background-color: #666666;
+  border-bottom: 2px solid #FE5043;
 }
 .footer {
   width: 100%;
