@@ -1,1 +1,66 @@
 // Navigation Styles here
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: @navigation-bg;
+    height: 7rem;
+
+    @media @tablet {
+        height: 6rem;
+    }
+
+    @media @mobile {
+        flex-direction: column;
+        height: 8rem;
+    }
+
+    p {
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 0;
+
+        span {
+            color: @red;
+        }
+    }
+
+    .linkCont{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+        height: 100%;
+        border-left: 1px solid @light-gray;
+
+        @media @tablet {
+            width: 50%;
+        }
+
+        @media @mobile {
+            width: 100%;
+            border: 1px solid @light-gray;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+            height: 100%;
+            width: 100%;
+            padding: 2%;
+            border-right: 1px solid @light-gray;
+        }
+
+        a:hover {
+            background-color: @navigation-hover;
+            border-bottom: 2px solid @navigation-border;
+        }
+    }
+
+    
+}
