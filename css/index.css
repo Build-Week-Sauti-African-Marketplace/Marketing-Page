@@ -319,7 +319,7 @@ nav .linkCont a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 5%;
+  padding: 4%;
 }
 .aboutHeader h1 p {
   font-size: 5rem;
@@ -333,11 +333,29 @@ nav .linkCont a:hover {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .aboutContent .member {
+    width: 100%;
+    padding: 2% 0;
+  }
+}
+@media (max-width: 800px) {
+  .aboutContent .member {
+    padding: 1% 0;
+  }
+}
 .aboutContent .member .memberWrapper {
   display: flex;
   width: 50%;
   padding: 3% 0;
   border-bottom: 1px solid #666666;
+}
+@media (max-width: 800px) {
+  .aboutContent .member .memberWrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 .aboutContent .member img {
   border-radius: 50%;
@@ -348,9 +366,26 @@ nav .linkCont a:hover {
   flex-direction: column;
   justify-content: center;
   padding-left: 10%;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .aboutContent .member .memberCont {
+    padding: 0;
+    align-items: center;
+  }
 }
 .aboutContent .member .memberCont h2 {
   width: 100%;
+}
+@media (max-width: 800px) {
+  .aboutContent .member .memberCont h2 {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .aboutContent .member .memberCont h2 {
+    width: 100%;
+  }
 }
 .aboutContent .member .memberCont button {
   border-radius: 50%;
