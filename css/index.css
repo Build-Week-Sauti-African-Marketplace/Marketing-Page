@@ -390,6 +390,19 @@ nav .linkCont a:hover {
 .aboutContent .member .memberCont button {
   border-radius: 50%;
   border: none;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 0;
+}
+.aboutContent .member .memberCont button i {
+  font-size: 2.5rem;
+  width: 100%;
+  height: 100%;
+  padding-top: 19%;
+}
+.aboutContent .member .memberCont button i:hover {
+  color: white;
+}
+.aboutContent .member .memberCont button:hover {
+  background-color: #2977c9;
 }
