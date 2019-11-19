@@ -319,7 +319,42 @@ nav .linkCont a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 5%;
 }
 .aboutHeader h1 p {
   font-size: 5rem;
+}
+.aboutContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aboutContent .member {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.aboutContent .member .memberWrapper {
+  display: flex;
+  width: 50%;
+  padding: 3% 0;
+  border-bottom: 1px solid #666666;
+}
+.aboutContent .member img {
+  border-radius: 50%;
+  width: 15rem;
+}
+.aboutContent .member .memberCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+.aboutContent .member .memberCont h2 {
+  width: 100%;
+}
+.aboutContent .member .memberCont button {
+  border-radius: 50%;
+  border: none;
+  width: 3rem;
+  height: 3rem;
 }
