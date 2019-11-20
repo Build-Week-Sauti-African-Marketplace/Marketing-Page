@@ -1,0 +1,108 @@
+.aboutHeader {
+    width: 100%;
+
+    h1  {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 4%;
+
+        p {
+            font-size: 5rem;
+            border-bottom: 5px solid @red;
+        }
+    }
+}
+
+.aboutContent {
+    display: flex;
+    flex-wrap: wrap;
+
+    .member {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+
+        @media @mobile {
+            width: 100%;
+            padding: 2% 0;
+        }
+
+        @media @tablet {
+            padding: 1% 0
+        }
+
+        .memberWrapper {
+            display: flex;
+            width: 60%;
+            padding: 3% 0;
+            margin: 2% 0;
+            border-bottom: 1px solid @light-gray;
+
+            @media @tablet {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        img {
+            border-radius: 50%;
+            width: 15rem;
+        }
+
+        .memberCont {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10%;
+            width: 100%;
+
+            @media @tablet {
+                padding: 0;
+                align-items: center;
+            }
+
+            h2 {
+                width: 100%;
+                font-weight: bold;
+
+                @media @tablet {
+                    width: 90%
+                }
+
+                @media @tablet {
+                    width: 100%;
+                }
+            }
+
+            button {
+                border-radius: 50%;
+                border: none;
+                width: 4rem;
+                height: 4rem;
+                padding: 0;
+
+                i {
+                    font-size: 2.5rem;
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 19%;
+                }
+
+                i:hover {
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
+            button:hover {
+                background-color: @icon-blue;
+            }
+
+            .gitButton:hover {
+                background-color: black;
+            }
+        }
+    }
+}
