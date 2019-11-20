@@ -175,7 +175,7 @@ nav {
   height: 7rem;
   border-bottom: 10px solid #FE5043;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   nav {
     height: 6rem;
   }
@@ -204,7 +204,7 @@ nav .linkCont {
   height: 100%;
   border-left: 1px solid #666666;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   nav .linkCont {
     width: 50%;
   }
@@ -252,7 +252,7 @@ footer p {
   display: flex;
   justify-content: right;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .homeHeader {
     flex-direction: column;
     justify-content: flex-end;
@@ -309,7 +309,7 @@ footer p {
     margin-right: 0;
   }
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .homeHeader .cta-container {
     padding: 5%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -476,7 +476,7 @@ footer p {
     padding: 2% 0;
   }
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .aboutContent .member {
     padding: 1% 0;
   }
@@ -488,16 +488,28 @@ footer p {
   margin: 2% 0;
   border-bottom: 1px solid #666666;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
+  .aboutContent .member .memberWrapper {
+    width: 70%;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
   .aboutContent .member .memberWrapper {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 }
+@media (max-width: 1444px) {
+  .aboutContent .member .memberWrapper {
+    width: 70%;
+  }
+}
 .aboutContent .member img {
   border-radius: 50%;
   width: 15rem;
+  max-width: 100%;
+  height: auto;
 }
 .aboutContent .member .memberCont {
   display: flex;
@@ -507,7 +519,7 @@ footer p {
   padding-left: 10%;
   width: 100%;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .aboutContent .member .memberCont {
     padding: 0;
     align-items: center;
@@ -517,12 +529,12 @@ footer p {
   width: 100%;
   font-weight: bold;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .aboutContent .member .memberCont h2 {
     width: 90%;
   }
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .aboutContent .member .memberCont h2 {
     width: 100%;
   }

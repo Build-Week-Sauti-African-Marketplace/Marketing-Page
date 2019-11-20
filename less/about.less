@@ -40,16 +40,26 @@
             margin: 2% 0;
             border-bottom: 1px solid @light-gray;
 
+            @media @mobile {
+                width: 70%;
+            }
+
             @media @tablet {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+            }
+
+            @media @tablet-lg {
+                width: 70%;
             }
         }
 
         img {
             border-radius: 50%;
             width: 15rem;
+            max-width: 100%;
+            height: auto;
         }
 
         .memberCont {
