@@ -323,6 +323,7 @@ nav .linkCont a:hover {
 }
 .aboutHeader h1 p {
   font-size: 5rem;
+  border-bottom: 5px solid #FE5043;
 }
 .aboutContent {
   display: flex;
@@ -346,8 +347,9 @@ nav .linkCont a:hover {
 }
 .aboutContent .member .memberWrapper {
   display: flex;
-  width: 50%;
+  width: 60%;
   padding: 3% 0;
+  margin: 2% 0;
   border-bottom: 1px solid #666666;
 }
 @media (max-width: 800px) {
@@ -376,6 +378,7 @@ nav .linkCont a:hover {
 }
 .aboutContent .member .memberCont h2 {
   width: 100%;
+  font-weight: bold;
 }
 @media (max-width: 800px) {
   .aboutContent .member .memberCont h2 {
@@ -402,7 +405,11 @@ nav .linkCont a:hover {
 }
 .aboutContent .member .memberCont button i:hover {
   color: white;
+  cursor: pointer;
 }
 .aboutContent .member .memberCont button:hover {
   background-color: #2977c9;
+}
+.aboutContent .member .memberCont .gitButton:hover {
+  background-color: black;
 }
