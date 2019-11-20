@@ -20,8 +20,9 @@
 
     .member {
         width: 50%;
-        display: flex;
-        justify-content: space-around;
+        // display: flex;
+        // justify-content: space-around;
+        .displayFlex(row, space-around, none);
 
         @media @mobile {
             width: 100%;
@@ -52,9 +53,7 @@
         }
 
         .memberCont {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            .displayFlex(column, center, none);
             padding-left: 10%;
             width: 100%;
 
@@ -73,6 +72,10 @@
 
                 @media @tablet {
                     width: 100%;
+                }
+                
+                span {
+                    color: @red;
                 }
             }
 
