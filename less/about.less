@@ -20,8 +20,9 @@
 
     .member {
         width: 50%;
-        display: flex;
-        justify-content: space-around;
+        // display: flex;
+        // justify-content: space-around;
+        .displayFlex(row, space-around, none);
 
         @media @mobile {
             width: 100%;
@@ -39,22 +40,30 @@
             margin: 2% 0;
             border-bottom: 1px solid @light-gray;
 
+            @media @mobile {
+                width: 70%;
+            }
+
             @media @tablet {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+            }
+
+            @media @tablet-lg {
+                width: 70%;
             }
         }
 
         img {
             border-radius: 50%;
             width: 15rem;
+            max-width: 100%;
+            height: auto;
         }
 
         .memberCont {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            .displayFlex(column, center, none);
             padding-left: 10%;
             width: 100%;
 
@@ -73,6 +82,10 @@
 
                 @media @tablet {
                     width: 100%;
+                }
+                
+                span {
+                    color: @red;
                 }
             }
 

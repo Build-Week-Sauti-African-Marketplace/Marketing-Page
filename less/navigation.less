@@ -1,11 +1,9 @@
 // Navigation Styles here
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    .displayFlex(row, space-around, center);
     background-color: @navigation-bg;
     height: 7rem;
-    text-decoration: none;
+    border-bottom: 10px solid @red;
 
     @media @tablet {
         height: 6rem;
@@ -28,13 +26,10 @@ nav {
     }
 
     .linkCont{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        .displayFlex(row, space-between, center);
         width: 20%;
         height: 100%;
         border-left: 1px solid @light-gray;
-        text-decoration: none;
 
         @media @tablet {
             width: 50%;
@@ -46,9 +41,7 @@ nav {
         }
 
         a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            .displayFlex(row, center, center);
             text-decoration: none;
             color: white;
             font-size: 2rem;
@@ -56,12 +49,10 @@ nav {
             width: 100%;
             padding: 2%;
             border-right: 1px solid @light-gray;
-            text-decoration: none;
         }
 
         a:hover {
-            background-color: @navigation-hover;
-            border-bottom: 2px solid @navigation-border;
+            background-color: @red;
         }
     }
 

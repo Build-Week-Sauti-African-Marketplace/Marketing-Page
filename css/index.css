@@ -168,13 +168,14 @@ a {
 }
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background-color: #212121;
   height: 7rem;
-  text-decoration: none;
+  border-bottom: 10px solid #FE5043;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   nav {
     height: 6rem;
   }
@@ -196,14 +197,14 @@ nav p span {
 }
 nav .linkCont {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 20%;
   height: 100%;
   border-left: 1px solid #666666;
-  text-decoration: none;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   nav .linkCont {
     width: 50%;
   }
@@ -216,30 +217,33 @@ nav .linkCont {
 }
 nav .linkCont a {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   color: white;
   font-size: 2rem;
   height: 100%;
   width: 100%;
   padding: 2%;
   border-right: 1px solid #666666;
-  text-decoration: none;
 }
 nav .linkCont a:hover {
-  background-color: #666666;
-  border-bottom: 2px solid #FE5043;
+  background-color: #FE5043;
 }
-.footer {
+footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 10px solid #FE5043;
   background: #212121;
 }
-.footer p {
+footer p {
   text-align: center;
-  color: black;
+  color: white;
   font-size: 1.6rem;
   padding: 20px;
+}
+.aboutFooter {
+  margin-top: 4%;
 }
 .homeHeader {
   background-image: url("/img/hero_img.jpg");
@@ -248,7 +252,7 @@ nav .linkCont a:hover {
   display: flex;
   justify-content: right;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .homeHeader {
     flex-direction: column;
     justify-content: flex-end;
@@ -305,7 +309,7 @@ nav .linkCont a:hover {
     margin-right: 0;
   }
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .homeHeader .cta-container {
     padding: 5%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -502,7 +506,9 @@ nav .linkCont a:hover {
 .aboutContent .member {
   width: 50%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: none;
 }
 @media (max-width: 500px) {
   .aboutContent .member {
@@ -510,7 +516,7 @@ nav .linkCont a:hover {
     padding: 2% 0;
   }
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .aboutContent .member {
     padding: 1% 0;
   }
@@ -522,25 +528,38 @@ nav .linkCont a:hover {
   margin: 2% 0;
   border-bottom: 1px solid #666666;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
+  .aboutContent .member .memberWrapper {
+    width: 70%;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
   .aboutContent .member .memberWrapper {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 }
+@media (max-width: 1444px) {
+  .aboutContent .member .memberWrapper {
+    width: 70%;
+  }
+}
 .aboutContent .member img {
   border-radius: 50%;
   width: 15rem;
+  max-width: 100%;
+  height: auto;
 }
 .aboutContent .member .memberCont {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: none;
   padding-left: 10%;
   width: 100%;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .aboutContent .member .memberCont {
     padding: 0;
     align-items: center;
@@ -550,15 +569,18 @@ nav .linkCont a:hover {
   width: 100%;
   font-weight: bold;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .aboutContent .member .memberCont h2 {
     width: 90%;
   }
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 999px) {
   .aboutContent .member .memberCont h2 {
     width: 100%;
   }
+}
+.aboutContent .member .memberCont h2 span {
+  color: #FE5043;
 }
 .aboutContent .member .memberCont button {
   border-radius: 50%;
