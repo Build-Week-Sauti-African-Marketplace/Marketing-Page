@@ -61,6 +61,7 @@
       max-width: 100%;
       margin-right: 0%;
       padding-bottom: 15%;
+      height: 70%;
       
     }
   }
@@ -88,6 +89,9 @@
   background-image: url("/img/info_img.jpg");
   background-size:cover;
   height: 100vh;
+  @media @tablet{
+    height:100%;
+  }
   .main-content-bg{
     background-color: rgba(254,80,67,.9);
     width:100%;
@@ -112,6 +116,10 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    @media @tablet{
+      flex-direction: column;
+      
+    }
   }
 
   /* Next & previous buttons */
@@ -128,6 +136,9 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    @media @tablet{
+      display:none;
+    }
   }
 
   /* Position the "next button" to the right */
@@ -155,6 +166,9 @@
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    @media @tablet{
+      display:none;
+    }
   }
 
   /* The dots/bullets/indicators */
@@ -167,6 +181,9 @@
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    @media @tablet{
+      display:none;
+    }
   }
 
   .active, .dot:hover {
@@ -175,6 +192,11 @@
   .slide-section{
     max-width: 30%;
     padding:3%;
+    @media @tablet {
+      align-content: center;
+      max-width: 90%;
+      margin-left: 4%;
+    }
     img{
       width:100%;
     }
@@ -189,5 +211,9 @@
   .middle-slide{
     border-right: 1px solid white;
     border-left: 1px solid white;
+    @media @tablet{
+      border-right: none;
+      border-left: none;
+    }
   }
 }
