@@ -347,7 +347,7 @@ footer p {
   background-color: green;
 }
 .mainContent {
-  background-image: url("/img/info_img4.jpg");
+  background-image: url("/img/info_img_optimized.jpg");
   background-size: cover;
   height: 100vh;
   /* Slideshow container */
